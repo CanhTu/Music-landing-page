@@ -445,7 +445,6 @@ body {
 .contain__wrapper {
   position: relative;
   display: table-cell;
-  vertical-align: middle;
 }
 
 .music__wrapper {
