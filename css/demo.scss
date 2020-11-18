@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    min-height: 100%;
+    max-width: 100vw;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    object-fit: cover;
+}
+
+a,
+abbr,
+acronym,
+address,
+applet,
+big,
+blockquote,
+body,
+caption,
+cite,
+code,
+dd,
+del,
+dfn,
+div,
+dl,
+dt,
+em,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+object,
+ol,
+p,
+pre,
+q,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr,
+tt,
+ul,
+var {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+.artist-album {
+    background: #073E95;
+    min-height: 100vh;
+    .title-cap {
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+        padding: 30px 0;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .album-music {
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 20px 0;
+        .album-poster {
+            padding: 0;
+        }
+        .area1 {
+            .img {
+                width: 100%;
+            }
+        }
+        .area2 {
+            color: white;
+            background: black;
+            font-size: 13px;
+            padding: 10px;
+            h1 {
+                font-size: 20px;
+            }
+            .single-name {}
+            span {
+                width: 25px;
+                height: 5px;
+                background: white;
+            }
+            .description {}
+            div {
+                padding: 10px 20px;
+                border-radius: 10px;
+                background-color: #D40A06;
+            }
+        }
+        .area3 {}
+    }
+}
+
+#audioplayer {
+    width: 480px;
+    height: 60px;
+    margin: 50px auto auto auto;
+    border: solid;
+}
+
+#pButton {
+    height: 60px;
+    width: 60px;
+    border: none;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+    outline: none;
+}
+
+.play {
+    background: url('img/play.png');
+}
+
+.pause {
+    background: url('img/pause.png');
+}
+
+#timeline {
+    width: 400px;
+    height: 20px;
+    margin-top: 20px;
+    float: left;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, .3);
+}
+
+#playhead {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    margin-top: 1px;
+    background: rgba(0, 0, 0, 1);
+}

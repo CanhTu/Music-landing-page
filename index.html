@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Music Website</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.4/build/css/alertify.min.css" />
+
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.4/build/css/themes/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+    <script src="https://kit.fontawesome.com/439101feb1.js"></script>
+    <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Arima+Madurai&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/imagehover.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.css">
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark static-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <div class="animation">
+                        <div class="wave wave1" style="background-color:#E31D65"></div>
+                        <div class="wave wave2" style="background-color:#FF7C35"></div>
+                        <div class="wave wave3" style="background-color:#FFCB36"></div>
+                        <div class="wave wave4" style="background-color:#25A954"></div>
+                        <div class="wave wave5" style="background-color:#007D97"></div>
+                    </div>
+                </a>
+                <button class="navbar-toggler text-dark" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                <div class="collapse navbar-collapse text-dark" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sec1">RANKING</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sec2">NEW</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sec3">EVENTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sec4">TRENDING</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="row head-item">
+            <canvas id="canvas" width="100vw" height="100vh"></canvas>
+            <div class="row intro-2">
+                <div class="col-lg-4 col-xs-12 intro-img">
+                    <img src="img/TheTrain.jpg" alt="">
+                </div>
+                <div class="col-lg-8 col-xs-12 title-intro">
+                    <div class="bortop">
+                        <span></span>
+                    </div>
+                    <h1 id="logo-ani">THE TRAIN</h1>
+                    <p>AN INCREDIBLE JOURNEY IN THE AMAZING WORLD OF GUITAR AND VOICE</p>
+                    <button class="btn btn-danger">
+                            <i class="fas fa-play"></i> PLAY <span class="badge badge-primary"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class=" row" id="sec1">
+            <div data-aos="fade-up" class="col-xs-12 col-lg-6 chart-music">
+                <canvas id="myChart" height="380" width="400"></canvas>
+            </div>
+            <div data-aos="zoom-in" class="col-xs-12 col-lg-6">
+                <ul class="nav nav-tabs nav-justified md-tabs indigo" id="myTabJust" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link music-tab" country="vietnam" id="home-tab-just" data-toggle="tab" href="#home-just" role="tab" aria-controls="home-just" aria-selected="true">Việt Nam</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link music-tab active" country="usuk" id="profile-tab-just" data-toggle="tab" href="#profile-just" role="tab" aria-controls="profile-just" aria-selected="false">US-UK</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link music-tab" country="kpop" id="contact-tab-just" data-toggle="tab" href="#contact-just" role="tab" aria-controls="contact-just" aria-selected="false">K-pop</a>
+                    </li>
+                </ul>
+                <div class="tab-content card pt-5" id="myTabContentJust">
+                    <div class="tab-pane fade show " id="home-just" role="tabpanel" aria-labelledby="home-tab-just">
+                        <div class="list-group">
+                            <div class="song-chart list-group-item">
+                                <div class="song-flex">
+                                    <h1 style="color:#DC3912">1</h1>
+                                    <img src="img/songgio.jpg" alt="">
+                                    <div class="song-info">
+                                        <h3 class="hover-color">Sóng Gió</h3>
+                                        <p>Jack, K-ICM</p>
+                                    </div>
+                                </div>
+                                <div class="song-end">
+                                    <button type="button" name="PLAY Now" id="" class="btn play-demo" btn-lg btn-block>
+                                        <i class="fas fa-play"></i>
+                                        <audio class="click-play" src="music/SongGio.MP3"></audio>
+                                    </button>
+
+                                </div>
+                            </div>
+                            <div class="song-chart list-group-item">
+                                <div class="song-flex">
+                                    <h1 style="color:#3366CC">2</h1>
+                                    <img src="img/cotatca.jpg" alt="">
+                                    <div class="song-info">
+                                        <h3 class="hover-color">Có Tất Cả Nhưng Thiếu Anh</h3>
+                                        <p>ERIK</p>
+                                    </div>
+                                </div>
+                                <div class="song-end">
+                                    <button type="button" name="PLAY Now" id="" class="btn play-demo" btn-lg btn-block>
+                                        <i class="fas fa-play"></i>
+                                        <audio class="click-play" src="music/CoTatCaNhungThieuAnh.MP3"></audio>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="song-chart list-group-item">
+                                <div class="song-flex">
+                                    <h1 style="color:#109618">3</h1>
+                                    <img src="img/neungayay.jpg" alt="">
+                                    <div class="song-info">
+                                        <h3>Nếu Ngày Ấy</h3>
+                                        <p>Shoobin Hoàng Sơn</p>
+                                    </div>
+                                </div>
+                                <div class="song-end">
+                                    <button type="button" name="PLAY Now" id="" class="btn play-demo" btn-lg btn-block>
+                                            <i class="fas fa-play"></i>
+                                            <audio class="click-play" src="music/NeuNgayAy.MP3"></audio>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="song-chart list-group-item">
+                                <div class="song-flex">
+                                    <h1 style="color: #FF6A00">4</h1>
+                                    <img src="img/thangnam.jpg" alt="">
+                                    <div class="song-info">
+                                        <h3>Tháng Năm Không Quên</h3>
+                                        <p>H2K, KN</p>
+                                    </div>
+                                </div>
+                                <div class="song-end">
+                                    <button type="button" name="PLAY Now" id="" class="btn" btn-lg btn-block>
+                                            <i class="fas fa-play"></i>
+                                        </button>
+                                </div>
+                            </div>
+                            <div class="song-chart list-group-item">
+                                <div class="song-flex">
+                                    <h1 style="color:#990099">5</h1>
+                                    <img src="img/tranhduyen.jpg" alt="">
+                                    <div class="song-info">
+                                        <h3>Tránh Duyên (Remix)</h3>
+                                        <p>Đình Dũng</p>
+                                    </div>
+                                </div>
+                                <div class="song-end">
+                                    <button type="button" name="PLAY Now" id="" class="btn" btn-lg btn-block>
+                                            <i class="fas fa-play"></i>
+                                        </button>
+                                </div>
+                            </div>
+                            <div class="song-chart list-group-item">
+                                <div class="song-flex">
+                                    <h1>6</h1>
+                                    <img src="img/daude.jpg" alt="">
+                                    <div class="song-info">
+                                        <h3>Đau Để Trưởng Thành</h3>
+                                        <p>OnlyC</p>
+                                    </div>
+                                </div>
+                                <div class="song-end">
+                                    <button type="button" name="PLAY Now" id="" class="btn" btn-lg btn-block>
+                                            <i class="fas fa-play"></i>
+                                        </button>
+                                </div>
+                            </div>
+                            <div class="song-chart list-group-item">
+                                <div class="song-flex">
+                                    <h1>7</h1>
+                                    <img src="img/ailanguoi.jpg" alt="">
+                                    <div class="song-info">
+                                        <h3>Ai Là Người Thương Em</h3>
+                                        <p>Quân A.P</p>
+                                    </div>
+                                </div>
+                                <div class="song-end">
+                                    <button type="button" name="PLAY Now" id="" class="btn" btn-lg btn-block>
+                                            <i class="fas fa-play"></i>
+                                        </button>
+                                </div>
+                            </div>
+                            <div class="song-chart list-group-item">
+                                <div class="song-flex">
+                                    <h1>8</h1>
+                                    <img src="img/dungyeunua.jpg" alt="">
+                                    <div class="song-info">
+                                        <h3>Đừng Yêu Nữa Em Mệt Rồi</h3>
+                                        <p>Min</p>
+                                    </div>
+                                </div>
+                                <div class="song-end">
+                                    <button type="button" name="PLAY Now" id="" class="btn" btn-lg btn-block>
+                                                <i class="fas fa-play"></i>
+                                            </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade show active" id="profile-just" role="tabpanel" aria-labelledby="profile-tab-just">
+                        <div class="list-group">
+                            <div class="song-chart list-group-item">
+                                <div class="song-flex">
+                                    <h1>1</h1>
+                                    <img src="img/oldtown.jpg" alt="">
+                                    <div class="song-info">
+                                        <h3>Old Town Road (Remix)</h3>
+                                        <p>Lil Nas X, Billy Rap Cyrus</p>
+                                    </div>
+                                </div>
+                                <div class="song-end">
+                                    <button type="button" name="PLAY Now" id="" class="btn play-demo" btn-lg btn-block>
+                                                    <i class="fas fa-play"></i>
+                                                    <audio class="click-play" src="music/OldTownRoad.MP3"></audio>
+                                            </button>
+                                </div>
+                            </div>
+                            <div class="song-chart list-group-item">
+                                <div class="song-flex">
+                                    <h1 style="color:#3366CC">2</h1>
+                                    <img src="img/talk.jpg" alt="">
+                                    <div class="song-info">
+                                        <h3>Talk</h3>
+                                        <p>Khalid</p>
+                                    </div>
+                                </div>
+                                <div class="song-end">
+                                    <button type="button" name="PLAY Now" id="" class="btn play-demo" btn-lg btn-block>
+                                                <i class="fas fa-play"></i>
+                                                <audio class="click-play" src="music/Talk.MP3"></audio>
+                                            </button>
+                                </div>
+                            </div>
+                            <div class="song-chart list-group-item">
+                                <div class="song-flex">
+                                    <h1 style="color:#109618">3</h1>
+                                    <img src="img/truthhurst.jpg" alt="">
+                                    <div class="song-info">
+                                        <h3>Truth Hurts</h3>
+                                        <p>Lizzo</p>
+                                    </div>
+                                </div>
+                                <div class="song-end">
+                                    <button type="button" name="PLAY Now" id="" class="btn play-demo" btn-lg btn-block>
+                                                <i class="fas fa-play"></i>
+                                                <audio class="click-play" src="music/TruthHurts.MP3"></audio>
+                                            </button>
+                                </div>
+                            </div>
+                            <div class="song-chart list-group-item">
+                                <div class="song-flex">
+                                    <h1 style="color: #FF9900">4</h1>
+                                    <img src="img/idontcare.jpg" alt="">
+                                    <div class="song-info">
+                                        <h3>I Don't Care</h3>
+                                        <p>Ed Sheeran, Justin Bieber</p>
+                                    </div>
+                                </div>
+                                <div class="song-end">
+                                    <button type="button" name="PLAY Now" id="" class="btn" btn-lg btn-block>
+                                                <i class="fas fa-play"></i>
+                                            </button>
+                                </div>
+                            </div>
+                            <div class="song-chart list-group-item">
+                                <div class="song-flex">
+                                    <h1 style="color:#990099">5</h1>
+                                    <img src="img/noguide.jpg" alt="">
+                                    <div class="song-info">
+                                        <h3>No Guidance</h3>
+                                        <p>Chris Brown, Drake</p>
+                                    </div>
+                                </div>
+                                <div class="song-end">
+                                    <button type="button" name="PLAY Now" id="" class="btn" btn-lg btn-block>
+                                                <i class="fas fa-play"></i>
+                                            </button>
+                                </div>
+                            </div>
+                            <div class="song-chart list-group-item">
+                                <div class="song-flex">
+                                    <h1>6</h1>
+                                    <img src="img/heylook.jpg" alt="">
+                                    <div class="song-info">
+                                        <h3>Hey Look Ma, I Made It</h3>
+                                        <p>Panic! At The Disco</p>
+                                    </div>
+                                </div>
+                                <div class="song-end">
+                                    <button type="button" name="PLAY Now" id="" class="btn" btn-lg btn-block>
+                                                <i class="fas fa-play"></i>
+                                            </button>
+                                </div>
+                            </div>
+                            <div class="song-chart list-group-item">
+                                <div class="song-flex">
+                                    <h1>7</h1>
+                                    <img src="img/beernever.jpg" alt="">
+                                    <div class="song-info">
+                                        <h3>Beer Never Broken My Heart</h3>
+                                        <p>Luke Combs</p>
+                                    </div>
+                                </div>
+                                <div class="song-end">
+                                    <button type="button" name="PLAY Now" id="" class="btn" btn-lg btn-block>
+                                                <i class="fas fa-play"></i>
+                                            </button>
+                                </div>
+                            </div>
+                            <div class="song-chart list-group-item">
+                                <div class="song-flex">
+                                    <h1>8</h1>
+                                    <img src="img/beautifulpeple.jpg" alt="">
+                                    <div class="song-info">
+                                        <h3>Beautiful People</h3>
+                                        <p>Ed Sheeran, Khalid</p>
+                                    </div>
+                                </div>
+                                <div class="song-end">
+                                    <button type="button" name="PLAY Now" id="" class="btn" btn-lg btn-block>
+                                                    <i class="fas fa-play"></i>
+                                                </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade show " id="contact-just" role="tabpanel" aria-labelledby="contact-tab-just">
+                        <div class="list-group">
+                            <div class="song-chart list-group-item">
+                                <div class="song-flex">
+                                    <h1 style="color:#DC3912">1</h1>
+                                    <img src="img/apoem.jpg" alt="">
+                                    <div class="song-info">
+                                        <h3>A Poem Titled You</h3>
+                                        <p>TAEYEON</p>
+                                    </div>
+                                </div>
+                                <div class="song-end">
+                                    <button type="button" name="PLAY Now" id="" class="btn play-demo" btn-lg btn-block>
+                                                    <i class="fas fa-play"></i>
+                                                    <audio class="click-play" src="music/APoemTitledYou.mp3"></audio>
+                                            </button>
+                                </div>
+                            </div>
+                            <div class="song-chart list-group-item">
+                                <div class="song-flex">
+                                    <h1 style="color:#3366CC">2</h1>
+                                    <img src="img/drunkonlove.jpg" alt="">
+                                    <div class="song-info">
+                                        <h3>Drunk On Love</h3>
+                                        <p>Jang Hye Jin</p>
+                                    </div>
+                                </div>
+                                <div class="song-end">
+                                    <button type="button" name="PLAY Now" id="" class="btn play-demo" btn-lg btn-block>
+                                                <i class="fas fa-play"></i>
+                                                <audio class="click-play" src="music/DrunkOnLove.mp3"></audio>
+                                            </button>
+                                </div>
+                            </div>
+                            <div class="song-chart list-group-item">
+                                <div class="song-flex">
+                                    <h1 style="color:#109618">3</h1>
+                                    <img src="img/thankyoufor.jpg" alt="">
+                                    <div class="song-info">
+                                        <h3>Thank You For Goodbye</h3>
+                                        <p>Ben</p>
+                                    </div>
+                                </div>
+                                <div class="song-end">
+                                    <button type="button" name="PLAY Now" id="" class="btn play-demo" btn-lg btn-block>
+                                                <i class="fas fa-play"></i>
+                                                <audio class="click-play" src="music/ThankYouForYourGoodbye.mp3"></audio>
+                                            </button>
+                                </div>
+                            </div>
+                            <div class="song-chart list-group-item">
+                                <div class="song-flex">
+                                    <h1 style="color: #FF6A00">4</h1>
+                                    <img src="img/yourregards.jpg" alt="">
+                                    <div class="song-info">
+                                        <h3>Your Regards</h3>
+                                        <p>Song Haye</p>
+                                    `</div>
+                                </div>
+                                <div class="song-end">
+                                    <button type="button" name="PLAY Now" id="" class="btn" btn-lg btn-block>
+                                                <i class="fas fa-play"></i>
+                                            </button>
+                                </div>
+                            </div>
+                            <div class="song-chart list-group-item">
+                                <div class="song-flex">
+                                    <h1 style="color:#990099">5</h1>
+                                    <img src="img/you&I.jpg" alt="">
+                                    <div class="song-info">
+                                        <h3>You&I</h3>
+                                        <p>MeloMance</p>
+                                    </div>
+                                </div>
+                                <div class="song-end">
+                                    <button type="button" name="PLAY Now" id="" class="btn" btn-lg btn-block>
+                                                <i class="fas fa-play"></i>
+                                            </button>
+                                </div>
+                            </div>
+                            <div class="song-chart list-group-item">
+                                <div class="song-flex">
+                                    <h1>6</h1>
+                                    <img src="img/toyoumylile.jpg" alt="">
+                                    <div class="song-info">
+                                        <h3>To You My Light</h3>
+                                        <p>Maktub, Lee Raon</p>
+                                    </div>
+                                </div>
+                                <div class="song-end">
+                                    <button type="button" name="PLAY Now" id="" class="btn" btn-lg btn-block>
+                                                <i class="fas fa-play"></i>
+                                            </button>
+                                </div>
+                            </div>
+                            <div class="song-chart list-group-item">
+                                <div class="song-flex">
+                                    <h1>7</h1>
+                                    <img src="img/ifhthere.jpg" alt="">
+                                    <div class="song-info">
+                                        <h3>If There Was Practice In Love</h3>
+                                        <p>Lim Jae Hyun</p>
+                                    </div>
+                                </div>
+                                <div class="song-end">
+                                    <button type="button" name="PLAY Now" id="" class="btn" btn-lg btn-block>
+                                                <i class="fas fa-play"></i>
+                                            </button>
+                                </div>
+                            </div>
+                            <div class="song-chart list-group-item">
+                                <div class="song-flex">
+                                    <h1>8</h1>
+                                    <img src="img/tobehostnest.jpg" alt="">
+                                    <div class="song-info">
+                                        <h3>To Be Honest</h3>
+                                        <p>Kim Na Young</p>
+                                    </div>
+                                </div>
+                                <div class="song-end">
+                                    <button type="button" name="PLAY Now" id="" class="btn" btn-lg btn-block>
+                                                    <i class="fas fa-play"></i>
+                                                </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" row position-relative" id="sec2">
+            <h1 data-aos="zoom-in" class="title-cap1">NEW RELEASE</h1>
+            <div class="cover-img"></div>
+            <div class="hero__background owl-carousel">
+                <div class="item" style="background-image:url('img/SamSmith.jpg');max-width: 100vw;"></div>
+                <div class="item" style="background-image:url('img/MartinGarrix.jpg');max-width: 100vw;"></div>
+                <div class="item" style="background-image:url('img/Lauv.jpg');max-width: 100vw;"></div>
+                <div class="item" style="background-image:url('img/CharlieXCX.jpg');max-width: 100vw;"></div>
+            </div>
+            <div data-aos="fade-up" class="col-sm-12 col-lg-12 main__container">
+                <div class=" contain__wrapper">
+                    <div class=" music__wrapper">
+                        <div class="left__panel">
+                            <div class="cover owl-carousel">
+                                <div class="item">
+                                    <img src="img/DancingWithAStranger.jpg" width="350px" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="img/AfterTheAffterParty.jpg" width="350px" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="img/SoFarAway.jpg" width="350px" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="img/ParisInTheRain.jpg" width="350px" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right__panel">
+                            <div class="music__info__wrapper">
+                                <div class="header">
+                                    <div class="icon__wrapper">
+                                        <span class="icon-right"><i class="zmdi zmdi-apps"></i></span>
+                                        <div class="title owl-carousel">
+                                            <div class="item">
+                                                <div class="song__name">Dancing With A Stranger</div>
+                                                <p class="album__name">Sam Smith</p>
+                                            </div>
+                                            <div class="item">
+                                                <div class="song__name">After The Afterparty</div>
+                                                <p class="album__name">Charlie XCX</p>
+                                            </div>
+                                            <div class="item">
+                                                <div class="song__name">So Far Away</div>
+                                                <p class="album__name">Martin Garrix</p>
+                                            </div>
+                                            <div class="item">
+                                                <div class="song__name">Paris In The Rain</div>
+                                                <p class="album__name">LAUV</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="music__control">
+                                    <div class="music__button controls">
+                                        <audio class="my_audio" preload="none"></audio>
+                                        <button class="rew-btn"><span class="button__prev rew"><i class="zmdi zmdi-fast-rewind"></i></span></button>
+                                        <div class="play" id="a"><i class="fas btn-play fa-play"></i></div>
+                                        <button class="fwd-btn"><span class="button__next fwd"><i class="zmdi zmdi-fast-forward"></i></span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="music__menu">
+                                <span class="icon-right"><i class="zmdi zmdi-close"></i></span>
+                                <span class="menu_list"><i class="zmdi zmdi-favorite"></i>Favorite</span>
+                                <span class="menu_list"><i class="zmdi zmdi-audio"></i>Music</span>
+                                <span class="menu_list"><i class="zmdi zmdi-view-carousel"></i>Album</span>
+                                <span class="menu_list"><i class="zmdi zmdi-time-restore"></i>History</span>
+                                <span class="menu_list"><i class="zmdi zmdi-shopping-cart"></i>Buy Now</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class=" row intro-music" id="sec4">
+            <div data-aos="fade-down" class="col-lg-6 col-xs-12 detail-intro">
+                <img class="img-display" src="img/NineTrackMind-L.jpg" alt="">
+            </div>
+            <div data-aos="fade-up" class="col-lg-6 col-xs-12">
+                <div class="new-music">
+                    <div class="item-music">
+                        <div class="poster-img">
+                            <img src="img/InMyBlood.jpg" alt="" class="icon-music" />
+                            <div class="check-poster">
+                                <a href="#"><i class="far icon fa-2x play-icon fa-play-circle"></i></a>
+                            </div>
+                            <audio class="hover-play" src="music/InMyBlood.MP3"></audio>
+                        </div>
+                        <h6>IN MY BLOOD</h6>
+                        <h6 class="artist-name">SHAWN MENDES</h6>
+                    </div>
+                    <div class="item-music">
+                        <div class="poster-img">
+                            <img src="img/LetMeLoveYou-L.jpg" alt="" class="icon-music" />
+                            <div class="check-poster">
+                                <a href="#"><i class="far icon fa-2x play-icon fa-play-circle"></i></a>
+                            </div>
+                            <audio class="hover-play" src="music/LetMeLoveYou.MP3"></audio>
+                        </div>
+                        <h6>LET ME LOVE YOU</h6>
+                        <h6 class="artist-name">JUSTIN BIEBER</h6>
+                    </div>
+                    <div class="item-music">
+                        <div class="poster-img">
+                            <img src="img/NineTrackMind-L.jpg" alt="Nine Track Mind" class="icon-music" />
+                            <div class="check-poster">
+                                <a href="#"><i class="far icon fa-2x play-icon fa-play-circle"></i></a>
+                            </div>
+                            <audio class="hover-play" src="music/Dangerously.mp3"></audio>
+                        </div>
+                        <h6>DANGEROUSLY</h6>
+                        <h6 class="artist-name">CHARLIE PUTH</h6>
+                    </div>
+                    <div class="item-music">
+                        <div class="poster-img">
+                            <img src="img/OnMyWay-L.jpg" alt="" class="icon-music" />
+                            <div class="check-poster">
+                                <a><i class="far icon fa-2x play-icon fa-play-circle"></i></a>
+                            </div>
+                            <audio class="hover-play" src="music/OnMyWay.mp3"></audio>
+                        </div>
+                        <h6>ON MY WAY</h6>
+                        <h6 class="artist-name">ALAN WALKER</h6>
+                    </div>
+                    <div class="item-music">
+                        <div class="poster-img">
+                            <img src="img/HayTraoChoAnh.jpg" alt="" class="icon-music" />
+                            <div class="check-poster">
+                                <a><i class="far icon fa-2x play-icon fa-play-circle"></i></a>
+                            </div>
+                            <audio class="hover-play" src="music/HayTraoChoAnh.mp3"></audio>
+                        </div>
+                        <h6>HÃY TRAO CHO ANH</h6>
+                        <h6 class="artist-name">SƠN TÙNG MTP</h6>
+                    </div>
+
+                    <div class="item-music">
+                        <div class="poster-img">
+                            <img src="img/TheMiddle.jpg" alt="" class="icon-music" />
+                            <div class="check-poster">
+                                <a href="#"><i class="far icon fa-2x play-icon fa-play-circle"></i></a>
+                            </div>
+                            <audio class="hover-play" src="music/TheMiddle.MP3"></audio>
+                        </div>
+                        <h6>THE MIDDLE</h6>
+                        <h6 class="artist-name">ZEDD</h6>
+                    </div>
+                    <div class="item-music">
+                        <div class="poster-img">
+                            <img src="img/NewRules.jpg" alt="" class="icon-music" />
+                            <div class="check-poster">
+                                <a href="#"><i class="far icon fa-2x play-icon fa-play-circle"></i></a>
+                            </div>
+                            <audio class="hover-play" src="music/NewRules.mp3"></audio>
+                        </div>
+                        <h6>NEW RULES</h6>
+                        <h6 class="artist-name">DUA LIPA</h6>
+                    </div>
+                    <div class="item-music">
+                        <div class="poster-img">
+                            <img src="img/LegendsNeverDie.jpg" alt="" class="icon-music" />
+                            <div class="check-poster">
+                                <a href="#"><i class="far icon fa-2x play-icon fa-play-circle"></i></a>
+                            </div>
+                            <audio class="hover-play" src="music/LegendsNeverDie.mp3"></audio>
+                        </div>
+                        <h6>LEGENDS NEVER DIE </h6>
+                        <h6 class="artist-name">ATC</h6>
+                    </div>
+                    <div class="item-music">
+                        <div class="poster-img">
+                            <img src="img/StayWithMe-L.jpg" alt="" class="icon-music" />
+                            <div class="check-poster">
+                                <a href="#"><i class="far icon fa-2x play-icon fa-play-circle"></i></a>
+                            </div>
+                            <audio class="hover-play" src="music/StayWithMe.MP3"></audio>
+                        </div>
+                        <h6>STAY WITH ME</h6>
+                        <h6 class="artist-name">CHANYEOL</h6>
+                    </div>
+                    <div class="item-music">
+                        <div class="poster-img">
+                            <img src="img/Baby.jpeg" alt="" class="icon-music" />
+                            <div class="check-poster">
+                                <a href="#"><i class="far icon fa-2x play-icon fa-play-circle"></i></a>
+                            </div>
+                            <audio class="hover-play" src="music/Baby.mp3"></audio>
+                        </div>
+                        <h6>BABY</h6>
+                        <h6 class="artist-name">CLEAN BANDIT</h6>
+                    </div>
+                    <div class="item-music">
+                        <div class="poster-img">
+                            <img src="img/CityLights.jpg" alt="" class="icon-music" />
+                            <div class="check-poster">
+                                <a href="#"><i class="far icon fa-2x play-icon fa-play-circle"></i></a>
+                            </div>
+                            <audio class="hover-play" src="music/CityLights.mp3"></audio>
+                        </div>
+                        <h6>CITY LIGHTS</h6>
+                        <h6 class="artist-name">CHÂU ĐĂNG KHOA</h6>
+                    </div>
+                    <div class="item-music">
+                        <div class="poster-img">
+                            <img src="img/MauNuocMat.jpg" alt="" class="icon-music" />
+                            <div class="check-poster">
+                                <a href="#"><i class="far icon fa-2x play-icon fa-play-circle"></i></a>
+                            </div>
+                            <audio class="hover-play" src="music/MauNuocMat.MP3"></audio>
+                        </div>
+                        <h6>MÀU NƯỚC MẮT</h6>
+                        <h6 class="artist-name">ERIK</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" row video-bg" id="sec3">
+            <div class="overlay"></div>
+            <video width="400" loop autoplay muted controls>
+                <source src="video.mp4" type="video/mp4">
+            </video>
+            <div data-aos="fade-down" class="col-12" id="event">
+                <h1>EVENTS</h1>
+            </div>
+            <div data-aos="flip-up" class="col-lg-6 col-xs-12 scene-card">
+                <div class="card-rotate">
+                    <div class="card-face card-font">
+                        <div class="img-festival">
+                            <img src="img/festival1.jpg" alt="">
+                            <div class="cover-bg"></div>
+                            <div class="buy-ticket">
+                                <div id="label">CLUB PARTY</div>
+                                <div id="location">
+                                    <h1>SMOKE</h1>
+                                    <div>FABRIC / CLERKENWELL [UK] / JANUARY 30, 2020 01:00</div>
+                                </div>
+                                <span class="animation-target" id="clock"></span>
+                                <button type="button" class="btn buy-btn"><i class="fas fa-ticket-alt"></i> BUY TICKETS</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-face card-back">
+                        <div class="form-back">
+                            <!-- Default form contact -->
+                            <form class="text-center border border-light p-5" id="form_register" action="#!">
+
+                                <p class="h4 mb-4">BOOKING TICKET</p>
+
+                                <!-- Name -->
+                                <input type="text" id="username" class="form-control mb-4" placeholder="Name">
+                                <!-- Email -->
+                                <input type="email" id="email" class="form-control mb-4" placeholder="E-mail">
+
+                                <!-- Subject -->
+                                <label>CHOOSE YOUR TICKET</label>
+                                <select class="browser-default custom-select mb-4">
+                                    <option value="1" selected>SMOKE</option>
+                                    <option value="2">ELECTRONIC AFTER</option>
+                                    <option value="3">COLOPHONIC SOUNDS</option>
+                                    <option value="4">DJ KATARINA</option>
+                                    <option value="4">NIGHT GLOW</option>
+                                </select>
+                                <div class="choose-detail">
+                                    <div class="ticket-choose">
+                                        <label>NUMBER OF TICKETS</label>
+                                        <select class="browser-default custom-select mb-4">
+                                            <option value="1" selected>1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="4">5</option>
+                                        </select>
+                                    </div>
+                                    <div class="ticket-choose">
+                                        <label>TICKET TYPE</label>
+                                        <select class="browser-default custom-select mb-4">
+                                            <option value="1" selected>A - 500$</option>
+                                            <option value="2">B - 300$</option>
+                                            <option value="3">C - 100$</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <!-- Message -->
+                                <!-- Copy -->
+
+                                <!-- Send button -->
+                                <button class="btn submit-card btn-info btn-block" type="submit">BOOK</button>
+
+                            </form>
+                            <!-- Default form contact -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="flip-down" class="col-lg-6 col-xs-12 list-event">
+                <ul class="list-group list-group-flush  ">
+                    <li class="list-group-item">
+                        <div class="contain-list">
+                            <div class="date">
+                                <span>30</span>
+                                <h4>JAN 2020</h4>
+                            </div>
+                            <div class="name">
+                                <span>SMOKE</span>
+                                <h4>FABRIC / JANUARY 30, 2020</h4>
+                            </div>
+                            <button type="button" class="btn ">More Info <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="contain-list">
+                            <div class="date">
+                                <span>31</span>
+                                <h4>JAN 2020</h4>
+                            </div>
+                            <div class="name">
+                                <span>ELECTRONIC AFTER</span>
+                                <h4>MINISTRY OF SOUND / JANUARY 31, 2020</h4>
+                            </div>
+                            <button type="button" class="btn">More Info <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="contain-list">
+                            <div class="date">
+                                <span>15</span>
+                                <h4>FEB 2020</h4>
+                            </div>
+                            <div class="name">
+                                <span>COLOPHONIC SOUNDS</span>
+                                <h4>OKTAGON / FEBRUARY 15, 2020</h4>
+                            </div>
+                            <button type="button" class="btn">More Info <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="contain-list">
+                            <div class="date">
+                                <span>10</span>
+                                <h4>MAR 2020</h4>
+                            </div>
+                            <div class="name">
+                                <span>DJ KATARINA</span>
+                                <h4>ZOUK SINGAPORE / MARCH 10, 2020</h4>
+                            </div>
+                            <button type="button" class="btn">More Info <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="contain-list">
+                            <div class="date">
+                                <span>13</span>
+                                <h4>APR 2020</h4>
+                            </div>
+                            <div class="name">
+                                <span>NIGHT GLOW</span>
+                                <h4>USHUAIA / APRIL 13, 2020</h4>
+                            </div>
+                            <button type="button" class="btn hover-bg">More Info <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class=" row bg-light">
+        <div data-aos="fade-up" class="col-sm-4 list-trend ">
+            <h6 class="text-title ">LASTEST ALBUM</h6>
+            <ul class="list-group ">
+                <li class="list-group-item d-flex justify-content-start align-items-center ">
+                    <div class="image-parent ">
+                        <img src="img/AlbumWhatIsLove.jpg " class="img-fluid " alt="quixote " />
+                    </div>
+                    <div class="title-trend ">
+                        <h6>WHAT IS LOVE ?</h6>
+                        <p>Clean Bandit</p>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-start align-items-center ">
+                    <div class="image-parent ">
+                        <img src="img/Album24KMagic.jpg " class="img-fluid " alt="quixote " />
+                    </div>
+                    <div class="title-trend ">
+                        <h6>24K MAGIC</h6>
+                        <p>Bruno Mars</p>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-start align-items-center ">
+                    <div class="image-parent ">
+                        <img src="img/AlbumTheWar.jpg " class="img-fluid " alt="quixote " />
+                    </div>
+                    <div class="title-trend ">
+                        <h6>THE WAR</h6>
+                        <p>EXO</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div data-aos="fade-down" class="col-sm-4 list-trend ">
+            <h6 class="text-title ">TOP ARTISTS</h6>
+            <ul class="list-group ">
+                <li class="list-group-item d-flex justify-content-start align-items-center ">
+                    <div class="image-parent ">
+                        <img src="img/shawnmendes.jpg " class="img-fluid " alt="quixote " />
+                    </div>
+                    <div class="title-trend ">
+                        <h6>SHAWN MENDES</h6>
+                        <p>Canada</p>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-start align-items-center ">
+                    <div class="image-parent ">
+                        <img src="img/neverbethesame.jpg " class="img-fluid " alt="quixote " />
+                    </div>
+                    <div class="title-trend ">
+                        <h6>CAMILA CABELLO</h6>
+                        <p>Cuba</p>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-start align-items-center ">
+                    <div class="image-parent ">
+                        <img src="img/cleanbandit.jfif " class="img-fluid " alt="quixote " />
+                    </div>
+                    <div class="title-trend ">
+                        <h6>CLEAN BANDIT</h6>
+                        <p>England</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div data-aos="fade-up" class="col-sm-4 list-trend ">
+            <h6 class="text-title ">NEW PLAYLISTS</h6>
+            <ul class="list-group ">
+                <li class="list-group-item d-flex justify-content-start align-items-center ">
+                    <div class="image-parent ">
+                        <img src="img/Mood Booster.jpg " class="img-fluid " alt="quixote " />
+                    </div>
+                    <div class="title-trend ">
+                        <h6>MOOD BOOSTER</h6>
+                        <p>Acoustic</p>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-start align-items-center ">
+                    <div class="image-parent ">
+                        <img src="img/Today'sTopHit.jpg" class="img-fluid" alt="quixote" />
+                    </div>
+                    <div class="title-trend">
+                        <h6>TODAYS'S TOP HIT</h6>
+                        <p>Pop</p>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-start align-items-center">
+                    <div class="image-parent">
+                        <img src="img/YoungBold.jpg" class="img-fluid" alt="quixote" />
+                    </div>
+                    <div class="title-trend">
+                        <h6>YOUNG & BOLD</h6>
+                        <p>Dance</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="page-footer font-small">
+
+        <!-- Footer Elements -->
+        <div class="container d-flex justify-content-center align-items-center">
+
+            <!-- Grid row-->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-12 py-5">
+                    <div class="mb-5 flex-center brand-icon">
+
+                        <!-- Facebook -->
+                        <a class="fb-ic">
+                            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!-- Twitter -->
+                        <a class="tw-ic">
+                            <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!-- Google +-->
+                        <a class="gplus-ic">
+                            <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!--Linkedin -->
+                        <a class="li-ic">
+                            <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!--Instagram-->
+                        <a class="ins-ic">
+                            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!--Pinterest-->
+                        <a class="pin-ic">
+                            <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row-->
+
+        </div>
+        <!-- Footer Elements -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2018 Copyright:
+            <a href="https://mdbootstrap.com/education/bootstrap/">MDbootstrap.com</a>
+        </div>
+    </footer>
+    <div id="on-top">
+        <i class="fas fa-arrow-circle-up"></i>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.11.4/build/alertify.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/anime.min.js"></script>
+    <script src="js/from-internet.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
